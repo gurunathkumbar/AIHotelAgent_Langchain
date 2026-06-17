@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
+from dotenv import load_dotenv
+load_dotenv()
 
 
 prompt = open('website_text.txt', 'r').read()
