@@ -2,8 +2,8 @@
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from groq import Groq
-
-
+from dotenv import load_dotenv
+load_dotenv()
 
 prompt = open('website_text.txt', 'r').read()
 
